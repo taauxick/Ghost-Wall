@@ -19,9 +19,17 @@ function getDangerLevel(category) {
 
 function getStatus(domain, userRules) {
   const category = classifyDomain(domain);
-  if (category === 'Social') return 'Allowed'; // Social domains are always allowed
+
+  // Ensure Social domains are always allowed
+  if (category === 'Social') return 'Allowed';
+
+  // Check blacklist first
   if (userRules && userRules.blacklist && userRules.blacklist.includes(domain)) return 'Blocked';
+
+  // Check whitelist next
   if (userRules && userRules.whitelist && userRules.whitelist.includes(domain)) return 'Allowed';
+
+  // Default status
   return 'Allowed';
 }
 
