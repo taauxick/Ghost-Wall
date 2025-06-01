@@ -4,10 +4,9 @@
   <img src="icon.png" alt="Ghost Wall Logo" width="96" height="96">
 </p>
 <p align="center">
-  <a href="https://www.linkedin.com/in/taauxick/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
+  🔗 <a href="https://www.linkedin.com/in/taauxick/" target="_blank">Connect with me on LinkedIn</a>
 </p>
+
 
 **Ghost Wall** is a browser extension that detects and blocks third-party tracking scripts on web pages. It gives you visibility and control over which domains are tracking you, and lets you manage your own whitelist and blacklist for maximum privacy.
 
