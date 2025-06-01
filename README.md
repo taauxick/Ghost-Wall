@@ -4,8 +4,8 @@
   <img src="icon.png" alt="Ghost Wall Logo" width="96" height="96">
 </p>
 <p align="center">
-  <a href="https://www.linkedin.com/in/taauxick/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin">
+  <a href="https://www.linkedin.com/in/taauxick/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
 </p>
 
