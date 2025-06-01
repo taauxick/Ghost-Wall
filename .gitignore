@@ -1,0 +1,20 @@
+# Node modules and build
+node_modules/
+dist/
+build/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env/secrets
+.env
+*.env
+
+# Chrome extension artifacts
+*.zip
+*.crx
+
+# VS Code settings
+.vscode/
