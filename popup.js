@@ -10,13 +10,16 @@ function classifyDomain(domain) {
 }
 
 function getDangerLevel(category) {
-  if (category === 'Ads' || category === 'Social') return 'badge-danger';   // Red
-  if (category === 'Analytics') return 'badge-mid';                         // Yellow
-  if (category === 'CDN' || category === 'Google') return 'badge-safe';     // Green
-  return 'badge-other';                                                     // Grey
+  if (category === 'Ads') return 'badge-danger';   // Red
+  if (category === 'Social') return 'badge-safe';  // Green
+  if (category === 'Analytics') return 'badge-mid'; // Yellow
+  if (category === 'CDN' || category === 'Google') return 'badge-safe'; // Green
+  return 'badge-other'; // Grey
 }
 
 function getStatus(domain, userRules) {
+  const category = classifyDomain(domain);
+  if (category === 'Social') return 'Allowed'; // Social domains are always allowed
   if (userRules && userRules.blacklist && userRules.blacklist.includes(domain)) return 'Blocked';
   if (userRules && userRules.whitelist && userRules.whitelist.includes(domain)) return 'Allowed';
   return 'Allowed';
